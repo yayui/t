@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CWT同人場次</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="./t.css">
+</head>
+
+<body>
+  <div>
+    <img id="demo" src='http://www.comicworld.com.tw/ULImages/ADPics/53.jpg' width='100%'>
+  </div>
+  <div id="event-list-div" style="display:block">
+    <ul class="collection" id="event-list">
+    </ul>
+  </div>
+  <div id="tabs">
+    <a id="tab-trigger-1" class="card-panel pink lighten-3 btn-large">地圖=></a>
+    <a id="tab-trigger-2" class="card-panel pink lighten-3 btn-large">相關pixnet文章=></a>
+    <a id="tab-trigger-3" class="card-panel pink lighten-3 btn-large">相關Youtube影片=></a>
+  </div>
+  <div id="tab-target-1">
+    <a id="btn-0" class="card-panel blue accent-3 btn-large">台大場=></a>
+    <a id="btn-1" class="card-panel blue accent-3 btn-large">高雄場=></a>
+    <a id="btn-2" class="card-panel blue accent-3 btn-large">台中場=></a>
+    <iframe id="google-map-iframe" width="100%" height="440" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDiFLrCeYtvuuuY1B587MTHSNgj1QzoZPs&q=國立台灣大學體育館" allowfullscreen>
+    </iframe>
+  </div>
+  <div id="tab-target-2">
+    <div id="pixnetList" class="card-panel blue accent-3">
+      <span class="white-text text-darken-2">電玩動漫熱門類別</span>
+    </div>
+    <div id="pixnet-stuff-div">
+      <ul class="collection" id="pixnet-stuff">
+      </ul>
+    </div>
+  </div>
+  <div id="tab-target-3">
+    <div id="videoList" class="card-panel pink lighten-3">
+      <span class="white-text text-darken-2">播放清單</span>
+    </div>
+    <div id="VideoThumbs"></div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="./t.js"></script>
+
+</html>
